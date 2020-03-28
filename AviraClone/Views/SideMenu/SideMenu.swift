@@ -52,8 +52,8 @@ struct SideMenu: View {
                 .onTapGesture {
                     self.selected = 0
                 }
-                .onHover { _ in
-                    self.scannerOpacity.toggle()
+                .onHover { hover in
+                    self.scannerOpacity = hover
                 }
                 
                 VStack {
@@ -84,8 +84,8 @@ struct SideMenu: View {
                 .onTapGesture {
                     self.selected = 1
                 }
-                .onHover { _ in
-                    self.schedulerOpacity.toggle()
+                .onHover { hover in
+                    self.schedulerOpacity = hover
                 }
                 
                 VStack {
@@ -116,8 +116,8 @@ struct SideMenu: View {
                 .onTapGesture {
                     self.selected = 2
                 }
-                .onHover { _ in
-                    self.modulesOpacity.toggle()
+                .onHover { hover in
+                    self.modulesOpacity = hover
                 }
                 
                 VStack {
@@ -148,8 +148,8 @@ struct SideMenu: View {
                 .onTapGesture {
                     self.selected = 3
                 }
-                .onHover { _ in
-                    self.quarantineOpacity.toggle()
+                .onHover { hover in
+                    self.quarantineOpacity = hover
                 }
                 
                 VStack {
@@ -180,8 +180,8 @@ struct SideMenu: View {
                 .onTapGesture {
                     self.selected = 4
                 }
-                .onHover { _ in
-                    self.activityOpacity.toggle()
+                .onHover { hover in
+                    self.activityOpacity = hover
                 }
                 
                 VStack {
@@ -212,8 +212,8 @@ struct SideMenu: View {
                 .onTapGesture {
                     self.selected = 5
                 }
-                .onHover { _ in
-                    self.accountOpacity.toggle()
+                .onHover { hover in
+                    self.accountOpacity = hover
                 }
                 
                 VStack {
@@ -244,8 +244,8 @@ struct SideMenu: View {
                 .onTapGesture {
                     self.selected = 6
                 }
-                .onHover { _ in
-                    self.getProOpacity.toggle()
+                .onHover { hover in
+                    self.getProOpacity = hover
                 }
             }
             
@@ -280,8 +280,8 @@ struct SideMenu: View {
                 .onTapGesture {
                     self.selected = 7
                 }
-                .onHover { _ in
-                    self.settingsOpacity.toggle()
+                .onHover { hover in
+                    self.settingsOpacity = hover
                 }
                 
                 VStack {
@@ -312,8 +312,8 @@ struct SideMenu: View {
                 .onTapGesture {
                     self.selected = 8
                 }
-                .onHover { _ in
-                    self.feedbackOpacity.toggle()
+                .onHover { hover in
+                    self.feedbackOpacity = hover
                 }
             }
         }.background(Color("Black"))
