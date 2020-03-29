@@ -13,7 +13,7 @@ struct ContentView: View {
         ZStack {
             MainView()
         }
-            .frame(minWidth: 960, minHeight: 680)
+            .frame(minWidth: 960, minHeight: 638)
             .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
 }
