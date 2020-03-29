@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct SideMenu: View {
-    @State private var selected = 0
+    @Binding var selected: Int
     
     @State private var scannerOpacity = true
     @State private var schedulerOpacity = true
@@ -322,6 +322,6 @@ struct SideMenu: View {
 
 struct SideMenu_Previews: PreviewProvider {
     static var previews: some View {
-        SideMenu()
+        SideMenu(selected: .constant(0))
     }
 }

@@ -9,11 +9,13 @@
 import SwiftUI
 
 struct MainView: View {
+    @State private var selected = 0
+    
     var body: some View {
         VStack {
             HStack {
-                SideMenu()
-                MainWindowView()
+                SideMenu(selected: self.$selected)
+                MainWindowView(selected: self.$selected)
             }
         }
     }
